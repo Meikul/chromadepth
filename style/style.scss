@@ -1,0 +1,40 @@
+.exp{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0,200,0);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.circle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  // background: radial-gradient(hsl(0, 100%, 50%), hsl(120, 100%, 50%));
+  background: black;
+  z-index: 0;
+  &.hole{
+    background: black;
+    height: 220px;
+    width: 220px;
+    z-index: -1;
+  }
+  &.circle-left, &.hole-left{
+    left: 33%;
+  }
+  &.circle-right, &.hole-right{
+    left: 66%;
+  }
+  &.circle-up, &.hole-up{
+    top: 25%;
+  }
+  &.circle-down, &.hole-down{
+    top: 75%;
+  }
+}
