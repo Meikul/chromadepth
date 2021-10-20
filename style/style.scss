@@ -1,3 +1,7 @@
+body{
+  background: black;
+}
+
 .exp{
   position: absolute;
   top: 0;
@@ -6,6 +10,37 @@
   width: 100vw;
   height: 100vh;
   z-index: 0;
+}
+
+a{
+  position: absolute;
+  margin: 10px;
+  color: #c5c;
+}
+
+.line{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20vh;
+  border-radius: 4px;
+  background: white;
+}
+
+#red-line{
+  // background: #f00;
+  top: 10vh;
+}
+
+#green-line{
+  // background: #0f0;
+  top: 40vh
+}
+
+#blue-line{
+  // background: #00f;
+  top: 70vh;
 }
 
 .circle{
